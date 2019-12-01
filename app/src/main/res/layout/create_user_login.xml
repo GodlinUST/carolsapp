@@ -1,0 +1,107 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      android:background="@drawable/christmas_background2"
+      tools:context=".MainActivity">
+       <!-- android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity" >-->
+
+      <EditText
+          android:id="@+id/edtUsername"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/edtlastname"
+          android:layout_marginTop="9dp"
+          android:ems="10"
+          android:hint="email address"
+          android:inputType="textPersonName"
+          android:singleLine="true" />
+
+      <EditText
+          android:id="@+id/edtfirstname"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/edtlastname"
+          android:layout_alignParentTop="true"
+          android:layout_marginLeft="0dp"
+          android:layout_marginTop="196dp"
+          android:ems="10"
+          android:hint="enter_your_first_name"
+          android:inputType="textPersonName"
+          android:singleLine="true" >
+
+      <requestFocus />
+      </EditText>
+      <EditText
+          android:id="@+id/edtPass"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/edtUsername"
+          android:layout_alignLeft="@+id/edtUsername"
+          android:layout_marginLeft="-6dp"
+          android:layout_marginTop="13dp"
+          android:ems="10"
+          android:hint="enter_password"
+          android:inputType="textPassword"
+          android:singleLine="true">
+
+      </EditText>
+
+      <EditText
+          android:id="@+id/edtConfirmPass"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/edtPass"
+          android:layout_alignLeft="@+id/edtPass"
+          android:layout_marginLeft="9dp"
+          android:layout_marginTop="7dp"
+          android:ems="10"
+          android:hint="re_enter_password"
+          android:inputType="textPassword"
+          android:singleLine="true" />
+
+      <!--<EditText
+          android:id="@+id/edtEmail"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/edtConfirmPass"
+          android:layout_alignLeft="@+id/edtConfirmPass"
+          android:layout_marginLeft="2dp"
+          android:layout_marginTop="11dp"
+          android:ems="10"
+          android:hint="enter_valid_email_id_optional_"
+          android:inputType="textEmailAddress"
+          android:singleLine="true" />-->
+
+      <EditText
+          android:id="@+id/edtlastname"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/edtfirstname"
+          android:layout_alignLeft="@+id/edtUsername"
+          android:layout_marginLeft="1dp"
+          android:layout_marginTop="12dp"
+          android:ems="10"
+          android:hint="enter_last_name"
+          android:inputType="textPersonName"
+          android:singleLine="true" />
+
+      <Button
+          android:id="@+id/button1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/edtConfirmPass"
+          android:layout_alignLeft="@+id/edtConfirmPass"
+          android:layout_marginLeft="-8dp"
+          android:layout_marginTop="13dp"
+          android:text="register" />
+  </RelativeLayout>
+</ScrollView>
