@@ -31,7 +31,8 @@ public class SongDisplayActivity extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.song_display_view);
         Bundle bundle = getIntent().getExtras();
         String data = bundle.get("data").toString();
-        Toast.makeText(this, data, Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, data, Toast.LENGTH_LONG).show();
+        /*DB call need to given here,ata need to get shown from DB*/
         textView.setText(R.string.hark_the_herald);
         final String dataContent = (String) textView.getText();
 
@@ -41,6 +42,14 @@ public class SongDisplayActivity extends AppCompatActivity {
             public void onClick(View view) {
                 writeToFile(dataContent, SongDisplayActivity.this);
 
+            }
+        });
+        Button playBtn = findViewById(R.id.play);
+        playBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SongDisplayActivity.this, MusicServiceClient.class);
+                startActivity(intent);
             }
         });
 

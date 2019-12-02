@@ -3,6 +3,11 @@
     <string name="channel_name">Christmas Carols</string>
     <string name="channel_description">Christmas Carols</string>
     <string name="channel_id">Christmas</string>
+    <string name="createUser">Create New User</string>
+    <string name="songIndex">Song Index</string>
+    <string name="songDisplay">View Song</string>
+    <string name="start_service_string">Start Playing</string>
+    <string name="stop_service_string">Stop Playing</string>
     <string name="hark_the_herald">
   <![CDATA[
      Hark! the herald angels sing,

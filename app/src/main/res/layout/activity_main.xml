@@ -4,29 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/christmas_background2"><![CDATA[
-    tools:context=".MainActivity">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ]]>
-
+    android:background="@drawable/christmas_background3">
     <EditText
         android:id="@+id/emailval"
         android:layout_width="277dp"
@@ -87,6 +65,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="92dp"
         android:text="No Account Yet?"
+        android:textColor="#000000"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,6 +82,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="92dp"
         android:text="Create one"
+        android:textColor="#000000"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
